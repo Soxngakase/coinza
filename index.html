@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en" class="nojs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Coinza – Earn points with games, tasks and rewarded ads</title>
+<meta name="description" content="Coinza is an Android rewards app by Sox. Play games, finish tasks, watch optional rewarded ads and earn points.">
+<meta name="theme-color" content="#5b21b6">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.remove('nojs')</script>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="brand" href="#top"><span class="logo">🚀</span>Coinza</a>
+  <div class="menu" id="menu">
+    <a href="#features">Features</a>
+    <a href="#earn">Calculator</a>
+    <a href="#how">How it works</a>
+    <a href="#rules">Rules</a>
+    <a href="#developer">Developer</a>
+    <a href="privacy.html">Privacy</a>
+  </div>
+  <div style="display:flex;gap:8px">
+    <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">🌙</button>
+    <button class="icon-btn burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <div>
+    <span class="badge"><span class="dot"></span> Android rewards app</span>
+    <h1>Play. Complete tasks. <span class="grad">Earn points.</span></h1>
+    <p class="sub">Coinza brings mini games, daily tasks, referrals and optional rewarded video ads together in one clean app, with a wallet to track every point.</p>
+    <div class="btns">
+      <a class="btn primary" href="#features">Explore features →</a>
+      <a class="btn ghost" href="#earn">Try the calculator</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>10</b><span>points per ad</span></div>
+      <div class="stat"><b>5</b><span>ads per day</span></div>
+      <div class="stat"><b>2</b><span>mini games</span></div>
+      <div class="stat"><b>GCash</b><span>withdrawals</span></div>
+    </div>
+  </div>
+  <div class="phone-wrap">
+    <div class="float-chip a">🎬 +10 points</div>
+    <div class="float-chip b">✅ Task approved</div>
+    <div class="phone tilt" aria-hidden="true"><div class="screen">
+      <div class="notch"></div>
+      <div class="hi">Welcome back 👋</div>
+      <div class="bal"><small>Your points</small><b>1,250</b></div>
+      <div class="tiles">
+        <div class="tile"><span>❌⭕</span>Tic Tac Toe</div>
+        <div class="tile"><span>🎲</span>Color Game</div>
+        <div class="tile"><span>✅</span>Tasks</div>
+        <div class="tile"><span>👥</span>Referrals</div>
+      </div>
+      <div class="adbar">🎬 Watch ad · +10 points
+        <div class="prog"><i></i></div>
+        <div style="font-weight:600;color:#6b7280;margin-top:4px">3 of 5 today</div>
+      </div>
+    </div></div>
+  </div>
+</div></header>
+
+<section class="block" id="features"><div class="wrap">
+  <div class="center rv"><div class="eyebrow">Features</div>
+  <h2 class="title">Everything you need in one app</h2>
+  <p class="lead">Pick an activity, collect points and follow your progress in the wallet.</p></div>
+  <div class="bento">
+    <div class="cell wide hl rv"><div class="ico">🎬</div><h3>Rewarded video ads</h3><p>Watch an optional video ad to the end and receive 10 points. Up to 5 ads a day, counted separately from your game limit.</p></div>
+    <div class="cell wide rv"><div class="ico">🎮</div><h3>Mini games</h3><p>Play Tic Tac Toe and the Color Game to win points. Free users have a daily game earning limit.</p></div>
+    <div class="cell rv"><div class="ico">✅</div><h3>Daily &amp; proof tasks</h3><p>Finish tasks, submit proof and get points after review.</p></div>
+    <div class="cell rv"><div class="ico">👥</div><h3>Referrals</h3><p>Share your referral code and earn when your referral qualifies.</p></div>
+    <div class="cell rv"><div class="ico">💰</div><h3>Wallet &amp; history</h3><p>See your balance and every earning and spending record.</p></div>
+    <div class="cell rv"><div class="ico">💸</div><h3>Withdrawals</h3><p>Request a GCash withdrawal once you reach the minimum. Each request is reviewed.</p></div>
+    <div class="cell rv"><div class="ico">⭐</div><h3>Premium plan</h3><p>A 30-day subscription that removes the daily game earning limit.</p></div>
+    <div class="cell rv"><div class="ico">💬</div><h3>Support &amp; news</h3><p>Send support tickets and read announcements in the app.</p></div>
+  </div>
+</div></section>
+
+<section class="block alt" id="earn"><div class="wrap">
+  <div class="center rv"><div class="eyebrow">Calculator</div>
+  <h2 class="title">See what ads can add up to</h2>
+  <p class="lead">Move the slider to see points from rewarded ads alone. Games and tasks are extra.</p></div>
+  <div class="calc rv">
+    <div>
+      <h3>Ads you watch per day</h3>
+      <p>The daily maximum is 5 rewarded ads.</p>
+      <div class="rangelabel"><span>Per day</span><span id="adsVal">5 ads</span></div>
+      <input class="range" id="adsRange" type="range" min="0" max="5" step="1" value="5" aria-label="Ads per day">
+      <div class="fine">Estimates only. Points have no guaranteed cash value, and withdrawals are reviewed.</div>
+    </div>
+    <div class="out">
+      <div class="box"><small>Per day</small><b id="perDay">50</b></div>
+      <div class="box"><small>Per week</small><b id="perWeek">350</b></div>
+      <div class="box"><small>Per 30 days</small><b id="perMonth">1,500</b></div>
+      <div class="box"><small>Days to 1,000 pts</small><b id="toMin">20 days</b></div>
+      <div class="box full"><small>Minimum withdrawal</small><b>1,000 points</b></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="block" id="screens"><div class="wrap">
+  <div class="center rv"><div class="eyebrow">Inside the app</div>
+  <h2 class="title">Clean, simple and easy to use</h2>
+  <p class="lead">A quick look at the main screens. Illustrative mockups.</p></div>
+  <div class="screens rv">
+    <div><div class="phone"><div class="screen"><div class="notch"></div>
+      <div class="hi">Earn</div>
+      <div class="adbar" style="margin:8px 0">🎬 Watch ad · +10 points<div class="prog"><i style="width:80%"></i></div><div style="font-weight:600;color:#6b7280;margin-top:4px">4 of 5 today · 1 left</div></div>
+      <div class="tiles" style="margin-top:10px"><div class="tile"><span>❌⭕</span>Tic Tac Toe</div><div class="tile"><span>🎲</span>Color Game</div></div>
+      <div class="row" style="margin-top:10px"><span>Daily task</span><em>+20</em></div>
+      <div class="row"><span>Referral</span><em>+50</em></div></div></div><div class="cap">Earn</div></div>
+    <div><div class="phone"><div class="screen"><div class="notch"></div>
+      <div class="hi">Wallet</div>
+      <div class="bal"><small>Balance</small><b>1,250</b></div>
+      <div class="row"><span>Rewarded Ad</span><em>+10</em></div>
+      <div class="row"><span>Tic Tac Toe win</span><em>+10</em></div>
+      <div class="row"><span>Color Game</span><em class="neg">-30</em></div>
+      <div class="row"><span>Rewarded Ad</span><em>+10</em></div></div></div><div class="cap">Wallet</div></div>
+    <div><div class="phone"><div class="screen"><div class="notch"></div>
+      <div class="hi">Withdraw</div>
+      <div class="bal" style="background:linear-gradient(135deg,#16a34a,#22c55e)"><small>Available</small><b>1,250</b></div>
+      <div class="row"><span>GCash name</span><em style="color:#6b7280">Your name</em></div>
+      <div class="row"><span>GCash number</span><em style="color:#6b7280">09XX…</em></div>
+      <div class="row"><span>Amount</span><em style="color:#6b7280">1,000</em></div>
+      <div class="tile" style="background:#5b21b6;color:#fff;margin-top:10px">Request withdrawal</div></div></div><div class="cap">Withdraw</div></div>
+  </div>
+</div></section>
+
+<section class="block alt" id="how"><div class="wrap">
+  <div class="center rv"><div class="eyebrow">How it works</div>
+  <h2 class="title">Start in four steps</h2>
+  <p class="lead">No complicated setup.</p></div>
+  <div class="steps">
+    <div class="step rv"><div class="num">1</div><h3>Create an account</h3><p>Sign up with your email and verify it.</p></div>
+    <div class="step rv"><div class="num">2</div><h3>Pick an activity</h3><p>Play a game, do a task or watch a rewarded ad.</p></div>
+    <div class="step rv"><div class="num">3</div><h3>Collect points</h3><p>Points go to your wallet and your history.</p></div>
+    <div class="step rv"><div class="num">4</div><h3>Withdraw</h3><p>At 1,000 points, request a GCash payout for review.</p></div>
+  </div>
+</div></section>
+
+<section class="block" id="rules"><div class="wrap">
+  <div class="center rv"><div class="eyebrow">Rules</div>
+  <h2 class="title">Points &amp; limits at a glance</h2>
+  <p class="lead">Fair limits keep Coinza healthy for everyone.</p></div>
+  <div class="tablewrap rv"><table class="rules">
+    <tr><th>Activity</th><th>Rule</th></tr>
+    <tr><td>🎬 Rewarded ad</td><td>10 points per completed ad, up to 5 ads per day</td></tr>
+    <tr><td>🎮 Game earnings</td><td>Daily limit of 500 points for free users</td></tr>
+    <tr><td>👥 Referral</td><td>50 points when the referral is approved</td></tr>
+    <tr><td>💸 Withdrawal</td><td>Minimum 1,000 points, in multiples of 1,000, via GCash</td></tr>
+    <tr><td>🕛 Daily reset</td><td>Midnight, Philippine time (UTC+8)</td></tr>
+  </table></div>
+  <div class="note rv">Rewards and limits may change as the app grows. Accounts that abuse the system may be suspended and their requests rejected. Points have no guaranteed cash value, and every withdrawal is subject to review.</div>
+</div></section>
+
+<section class="block alt" id="developer"><div class="wrap">
+  <div class="center rv"><div class="eyebrow">Developer</div>
+  <h2 class="title">Built by Sox</h2>
+  <p class="lead">Coinza is an independent project, designed, built and maintained by one developer.</p></div>
+  <div class="dev rv">
+    <div class="avatar">S</div>
+    <div>
+      <h3>Sox</h3>
+      <p>Independent app developer from the Philippines, building Coinza with Flutter and Firebase.</p>
+      <div class="chips"><span class="chip">Flutter</span><span class="chip">Firebase</span><span class="chip">Android</span><span class="chip">📧 <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></span></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="block" id="faq"><div class="wrap">
+  <div class="center rv"><div class="eyebrow">FAQ</div><h2 class="title">Common questions</h2><p class="lead">Quick answers.</p></div>
+  <div class="faq rv">
+    <details><summary>Is Coinza free?</summary><p>Yes. The app is free to use. An optional premium subscription is available.</p></details>
+    <details><summary>Do I have to watch ads?</summary><p>No. Ads are optional. Watching one to the end earns points.</p></details>
+    <details><summary>Why didn't I get points for an ad?</summary><p>Points are given only when the ad is completed. Closing it early, or reaching 5 ads that day, gives no reward.</p></details>
+    <details><summary>How do I withdraw?</summary><p>Open the withdrawal page in the app, enter your GCash name and number and submit. The team reviews each request.</p></details>
+    <details><summary>When does the daily limit reset?</summary><p>At midnight Philippine time (UTC+8).</p></details>
+    <details><summary>How can I contact support?</summary><p>Use the support option in the app, or email the developer.</p></details>
+  </div>
+</div></section>
+
+<section class="block" style="padding-top:0"><div class="wrap">
+  <div class="cta rv">
+    <h2>Ready to start earning?</h2>
+    <p>Coinza is coming to Google Play. Questions in the meantime? Get in touch.</p>
+    <a class="btn primary" href="mailto:YOUR_EMAIL@example.com">Contact the developer</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div><b style="color:#fff;font-size:1.1rem">🚀 Coinza</b><div style="margin-top:6px">Rewards app by Sox</div></div>
+    <div><a href="#features">Features</a><a href="#faq">FAQ</a><a href="privacy.html">Privacy Policy</a></div>
+  </div>
+  <div class="copy">&copy; 2026 Coinza. All rights reserved.</div>
+</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
